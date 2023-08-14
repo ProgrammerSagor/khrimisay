@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khrimisay</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/* background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4)); */
+
+/* rgb=rgb(124,62,30) */
+
+:root{
+    --top-color:#007a85;
+    --bg-color:#00929c;
+    --main-color:#6b7280;
+    --other-color:#334155;
+    --text-color:#7c3e1e;
+    --font-color:#ffffff;
+    --big-font:4.3rem;
+    --h2-font:2.2rem;
+    --p-font:1rem;
+}
+
+.head{
+    background-color: var(--top-color);
+    width: 100%;
+    height: 125vh;
+    transition: all .45s ease;
+}
+
+.head h2 {
+	color: var(--font-color);
+	padding: 22px 50px;
+}
+
+.top-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-btn {
+	position: absolute;
+	top: 20px;
+	right: 49px;
+	padding: 1px 2px;
+	background: #00929c;
+	border-radius: 13px;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+	border: 10px solid #00929c;
+}
+
+.cover {
+    width: 100%;
+    height: 320px;
+    background: url(image/cover.webp);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .45s ease;
+}
+
+.text {
+    width: 100%;
+    height: 320px;
+    background-color: #00929c86;
+}
+
+.text h3 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 40px;
+	display: block;
+	padding-top: 100px;
+}
+
+.text h3 span{
+    background: -webkit-linear-gradient(rgb(124,62,30));
+    background: -o-linear-gradient(right, red, yellow);
+    background: -moz-linear-gradient(right, red, yellow);
+    background: linear-gradient(to right, red , yellow); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.helf {
+    width: 100%;
+    height: 380px;
+}
+
+.text-aria {
+	width: 40%;
+	height: 256px;
+	margin-left: 50px;
+	position: absolute;
+	margin-top: 60px;
+}
+
+.text-aria h6 {
+	font-size: 46px;
+	color: #ffffff;
+}
+
+.text-aria p {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #ffffff;
+    margin-bottom: 20px;
+}
+.text-aria a {
+    text-decoration: underline;
+    color:#e59f21;
+    font-size: 18px;
+}
+
+.tabsection {
+	width: 50%;
+	height: 341px;
+	position: absolute;
+	right: 20px;
+	top: 408px;
+	display: flex;
+    margin-right: -20px;
+	overflow: clip;
+}
+
+.radius {
+	background: #e59f21;
+	width: 52%;
+	height: 323px;
+	border-radius: 50%;
+	margin-left: 386px;
+	margin-top: 9px;
+	position: absolute;
+    object-fit: fill;
+}   
+
+.tabsection .tablet {
+	margin-left: 419px;
+	position: relative;
+}
+
+.logo {
+	width: 205px;
+	height: 274px;
+	background-color: #007a85;
+	position: relative;
+	margin-left: -219px;
+	margin-top: 32px;
+}
+
+.image {
+	width: 202px;
+	height: 275px;
+}
+
+.mobile {
+	width: 141px;
+	height: 272px;
+	margin-left: -327px;
+	position: relative;
+	margin-top: 67px;
+}
+
+.phone {
+	width: 140px;
+	height: 276px;
+	position: relative;
+}
+
+.logo-color {
+	width: 123px;
+	height: 194px;
+	background-color: #007a85;
+	position: relative;
+	margin-top: -241px;
+	margin-left: 10px;
+}
+
+.m-logo {
+	width: 122px;
+	height: 195px;
+}
+
+.support {
+	width: 100%;
+	height: 408px;
+	background-color: #00929c;
+}
+.radius-2 {
+	background: #e59f21;
+	width: 27%;
+	height: 390px;
+	border-radius: 50%;
+	margin-left: -47px;
+	margin-top: 9px;
+	position: absolute;
+}
+
+.tablet-2 {
+	width: 272px;
+	height: 395px;
+	position: relative;
+	margin-left: 38px;
+    margin-top: 8px;
+}
+
+.logo-color-2 {
+	width: 243px;
+	height: 319px;
+	background-color: #00929c;
+	position: relative;
+	margin-top: -361px;
+	margin-left: 52px;
+}
+
+.row-logo {
+	width: 244px;
+	height: 322px;
+	position: relative;
+}
+
+.mobile-logo {
+	width: 206px;
+	height: 327px;
+	position: relative;
+	margin-left: 290px;
+	margin-top: -291px;
+}
+
+.row-mobile {
+	width: 206px;
+	height: 333px;
+}
+
+.bg-color {
+	width: 177px;
+	height: 237px;
+	background-color: #00929c;
+	position: relative;
+	margin-top: -290px;
+	margin-left: 16px;
+}
+
+.bg-logo {
+	width: 177px;
+	height: 239px;
+}
+
+.text-aria2 {
+	width: 565px;
+	height: 327px;
+	margin-top: -333px;
+	margin-left: 753px;
+}
+
+.text-aria2 h6 {
+	font-size: 46px;
+	color: #ffffff;
+}
+
+.text-aria2 p {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.laptop {
+	width: 100%;
+	height: 408px;
+	background: #007a85;
+	margin-top: -10px;
+}
+
+.laptop-text {
+	width: 550px;
+	height: 300px;
+	margin-left: 85px;
+	position: absolute;
+	margin-top: 46px;
+}
+
+.laptop-text h6 {
+	font-size: 46px;
+	color: #ffffff;
+}
+
+.laptop-text p {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.box {
+	width: 731px;
+	height: 405px;
+	margin-left: 635px;
+	overflow: clip;
+	padding-top: 15px;
+}
+
+.lap-radius {
+	background:#e59f21;
+	width: 52%;
+	height: 362px;
+	border-radius: 50%;
+	margin-left: 378px;
+	margin-top: 9px;
+}
+
+.lep-size {
+	width: 465px;
+	height: auto;
+	margin-top: 35px;
+	margin-left: -144px;
+	position: relative;
+}
+
+.lap-bg {
+	width: 337px;
+	height: 224px;
+	background: #007a85;
+	position: relative;
+	margin-top: -297px;
+	margin-left: -79px;
+}
+
+.lp-img {
+	width: 220px;
+	height: 224px;
+	margin: auto;
+	display: block;
+}
+
+.end {
+	width: 100%;
+	height: 90vw;
+	background: #ffffff;
+}
+.end h1 {
+	text-align: center;
+	margin-top: 40px ;
+	margin-bottom: 125px;
+}
+
+.degree {
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	background: #00929c69;
+	display: block;
+	margin: auto;
+}
+
+.icon1 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: aliceblue;
+	margin-left: 270px;
+	margin-top: -61px;
+	position: absolute;
+}
+.icon1 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: aliceblue;
+	margin-left: 270px;
+	margin-top: -61px;
+	position: absolute;
+}
+.icon2 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: aliceblue;
+	margin-left: -60px;
+	margin-top: 264px;
+	position: absolute;
+}
+
+.icon3 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: aliceblue;
+	margin-left: 611px;
+	position: absolute;
+	margin-top: 264px;
+}
+
+.icon4 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: aliceblue;
+	margin-left: 285px;
+	position: absolute;
+	margin-top: 610px;
+}
+
+.device1 {
+	display: block;
+	width: 78px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 45px;
+}
+.device2 {
+	display: block;
+	width: 78px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.device3 {
+	display: block;
+	width: 78px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 45px;
+}
+.device4 {
+	display: block;
+	width: 51px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.center {
+	width: 473px;
+	height: 382px;
+	background: #00929c;
+	display: block;
+	margin-left: 117px;
+	margin-right: auto;
+	position: absolute;
+	margin-top: 139px;
+	border-radius: 18px;
+}
+
+.email {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 20px;
+	width: 80%;
+	height: 50px;
+	margin-top: 22px;
+	border-radius: 10px;
+}
+
+.password {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 20px;
+	width: 80%;
+	height: 50px;
+	margin-top: 6px;
+	border-radius: 14px;
+}
+
+.btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background: #00929c;
+	border-radius: 7px;
+	padding: 5px 47px;
+	font-size: 24px;
+}
+
+.btn:hover {
+	letter-spacing: 2px;
+	background-color: #007a85;
+	color: #ffffff;
+	transition: all .45s ease;
+}
+
+input[type="email"] {
+	font-size: 20px;
+}
+input[type="password"] {
+	font-size: 20px;
+}
+
+.forget {
+	text-decoration: underline;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	margin-top: 22px;
+	
+}
+
+
+.dot {
+	width: 430px;
+	border-bottom: 3px solid aliceblue;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+}
+
+.new {
+	font-size: 20px;
+	display: block;
+	border: 2px solid #ffffff;
+	margin-top: 25px;
+	width: 232px;
+	height: 35px;
+	background: aliceblue;
+	border-radius: 8px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.new a {
+	color: #007a85;
+}
+
+.new a:hover{
+	letter-spacing: 2px;
+	transition: all .45s ease;
+}
+
+
+.copy {
+	width: 93%;
+	height: 78px;
+	background-color: #007a85;
+	margin-top: 290px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+}
+
+.copy span {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.copy span a {
+	color: #ffffff;
+	font-size: 23px;
+}
+
+.end p {
+	text-align: center;
+	margin-top: 8px;
+	color: #6b7280;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+    
+
+
+    
+</head>
+<body>
+    <section>
+        <div class="header">
+            <div class="head">
+                <h2><img src="image/logo.png" alt="" width="18px" height="18px">hrimisay</h2>
+                <button class="top-btn">Enter khrimisay</button>
+
+                <div class="cover">
+                    <div class="text">
+                        <h3>
+                            A platform <span>dedicated </span> to <br> making the social media space <br> <span>fun </span> and <span>memorable.</span>
+                        </h3>
+                    </div>
+                   
+                </div>
+                <div class="helf">
+                    <div class="text-aria">
+                        <h6>Share your  thoughts </h6>
+
+                        <p>Share your "utters" around the globe and in your local communities.</p>
+
+                        <p>Khrimisay continues to find innovative ways to ensure your thoughts are heard as far as they can travel.</p>
+
+                        <a href="#">Learn more about speak smoothly rational</a>
+                    </div>
+        
+                    <div class="tabsection">
+
+                        <div class="radius"></div>
+                        <img src="image/tab.png" alt="" class="tablet">
+                        
+                        <div class="logo">
+                            <img src="image/logo.png" alt=""  class="image">
+                        </div>
+
+                        <div class="mobile">
+                            <img src="image/mobile.png" alt="" class="phone">
+                            <div class="logo-color">
+                                <img src="image/logo.png" alt=""
+                                class="m-logo">
+                            </div>
+
+                        </div>
+        
+                    </div>
+        
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="support">
+            <div class="radius-2"></div>
+            <img src="image/tab.png" alt="" class="tablet-2">
+            <div class="logo-color-2">
+                <img src="image/logo.png" alt="" class="row-logo">
+            </div>
+
+            <div class="mobile-logo">
+                <img src="image/mobile.png" alt="" class="row-mobile">
+                <div class="bg-color">
+                    <img src="image/logo.png" alt="" class="bg-logo">
+                </div>
+            </div>
+
+            <div class="text-aria2">
+                <h6>Support your friends</h6>
+                <p>We are harnessing the power of feiendships to ensure that a friendship made is a friendship that counts.</p>
+
+                <p>on Khrimisay, "friends" go beyond the word, they actually mean something.</p>
+            </div>
+
+        </div>
+
+        <div class="laptop">
+            <div class="laptop-text">
+                <h6>Squares & Audience</h6>
+                <p>Carefully delect those you want to join their squares without having to stop seeing others people's utters.</p>
+                <p>Choose those who can be your audience.</p>
+
+                <p>Let your "squares and audience" count.</p>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="lap-radius">
+                    <img src="image/laptop.png" alt="" class="lep-size">
+
+                    <div class="lap-bg">
+                        <img src="image/logo.png" alt="" class="lp-img">
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+    </section>
+    <div class="end">
+        <h1>See  what's up </h1>
+
+        <div class="degree">
+
+            <div class="icon1">
+                <img src="image/1.png" alt="" class="device1">
+            </div>
+            <div class="icon2">
+                <img src="image/4.png" alt="" class="device2">
+            </div>
+            <div class="icon3">
+
+                <img src="image/2.png" alt="" class="device3">
+            </div>
+            <div class="icon4">
+
+                <img src="image/3.png" alt="" class="device4">
+            </div>
+
+
+            <div class="center">
+            
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="password" placeholder="password" class="password">
+
+                <input type="submit" value="Sign in" class="btn">
+
+                <a href="#" class="forget">Forget password</a>
+
+                <div class="dot"></div>
+
+                <span class="new"><a href="#">Create New Account</a></span>
+
+                
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+      
+
+
+
+
+
+
+        <div class="copy"> <span>
+        <a href="#">About |</a>    
+        <a href="#">Local |</a>    
+        <a href="#">Friends |</a>    
+        <a href="#">Cookies |</a>    
+        <a href="#">Market |</a>    
+        <a href="#">Social |</a>    
+        <a href="#">Login |</a>    
+        <a href="#">jobs |</a>    
+        <a href="#">Help |</a>    
+        <a href="#">Privacy |</a>    
+        <a href="#">Terms</a>    
+        
+        
+        </span>
+    
+    
+        <p>© 2023 All rights reserved by Sagor Chandra Das </p>
+    
+    </div>
+
+
+
+    </div>
+  
+
+   
+
+
+
+
+</body>
+</html>
